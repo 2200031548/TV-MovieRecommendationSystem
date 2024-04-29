@@ -1,0 +1,13 @@
+{% extends 'recommend/base.html'%}
+
+{%block body%}
+<h1 class="mov-hed">Add Movie</h1>
+<div class="form-content">
+
+    <form action="" method="POST" class="movie-form" style="width: 20%;">
+        {% csrf_token %}
+        {{form.as_p}}
+        <button   type="submit" style="background-color: #4CAF50; color:white;">submit</button>
+    </form>
+</div>
+{%endblock%}
